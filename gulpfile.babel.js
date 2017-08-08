@@ -72,7 +72,7 @@ gulp.task('styles:vendor', () => {
 
 gulp.task('markup', () => {
 	return gulp.src(config.paths.markup.source)
-	.pipe(swig())
+	.pipe(swig({ defaults: { cache: false } }))
 	.pipe(gulp.dest(config.paths.markup.build));
 });
 

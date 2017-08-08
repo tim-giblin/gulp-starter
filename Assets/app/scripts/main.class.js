@@ -6,7 +6,7 @@ class Main {
 	}
 
 	initialize () {
-		$('.js-welcome-title').text(this._localization.translate('start_message', 'en'));
+		$('.js-welcome-title').text(this._localization.translate('start_message'));
 	}
 }
 

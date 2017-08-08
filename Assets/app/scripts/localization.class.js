@@ -1,7 +1,7 @@
 const translations = {
 	'start_message': {
-		'en': 'Welcome to this site',
-		'sv': 'Välkommen till denna hemsida'
+		'en': 'Album example',
+		'sv': 'Album exempel'
 	}
 }
 
@@ -13,7 +13,7 @@ export default class Localization {
 	 * @return {string} translated string
 	 */
 	translate (string, culture = 'en') {
-		console.log("testing...");
+		console.log(translations[string][culture]);
 		return translations[string][culture];
 	}
 }
