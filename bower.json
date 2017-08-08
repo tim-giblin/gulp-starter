@@ -1,0 +1,21 @@
+{
+  "name": "project-name",
+  "description": "",
+  "main": "gulpfile.babel.js",
+  "authors": [
+    "Robin Bertilsson"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/RobinBertilsson/gulp-starter",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "Assets/app/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.6"
+  }
+}
