@@ -93,9 +93,9 @@ gulp.task('clean:bower', () => {
 })
 
 gulp.task('default', ['build', 'browser-sync'], () => {
-	gulp.watch(config.paths.scripts.watch, ['scripts:main']);
-	gulp.watch(config.paths.styles.watch, ['styles:main']);
-	gulp.watch(config.paths.markup.watch, ['markup']);
+	gulp.watch(config.paths.scripts.watch, ['scripts:main']).on('change', browserSync.reload);
+	gulp.watch(config.paths.styles.watch, ['styles:main']).on('change', browserSync.reload);
+	gulp.watch(config.paths.markup.watch, ['markup']).on('change', browserSync.reload);
 });
 
 gulp.task('build', ['scripts:main', 'styles:main', 'scripts:vendor', 'styles:vendor', 'images', 'markup']);
